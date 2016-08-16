@@ -4,7 +4,7 @@ import numpy as np #import numpy for
 import matplotlib.pyplot as plt #import matplotlib for plotting/drawing grpahs
 import operator #standard python library used for sorting
 
-g = nx.read_graphml("C:/Users/test/Desktop/Extracted Network on Column Authors.xml")
+g = nx.read_graphml("airlines.graphml")
 degree_sequence=sorted(nx.degree(g).values(),reverse=True) # degree sequence
 #print "Degree sequence", degree_sequence
 dmax=max(degree_sequence)
